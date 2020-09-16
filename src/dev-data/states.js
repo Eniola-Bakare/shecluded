@@ -1,0 +1,1 @@
+export const STATES = ["Abia","Adamawa","Akwa Ibom","Anambra","Bauchi","Benue","Borno","Bayelsa","Cross River","Delta","Ebonyi","Edo","Ekiti","Enugu","Abuja Capital Territory","Gombe","Imo","Jigawa","Kaduna","Kebbi","Kano","Kogi","Katsina","Kwara","Lagos","Nassarawa","Niger","Ogun","Ondo","Osun","Oyo","Plateau","Rivers","Sokoto","Taraba","Yobe","Zamfara"];

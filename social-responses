@@ -1,0 +1,26 @@
+------------------------------------FACEBOOOK-----------------------------------------------
+{
+  "name": "Lopi Flor",
+  "email": "lopi.flor@gmail.com",
+  "picture": {
+    "data": {
+      "height": 50,
+      "is_silhouette": false,
+      "url": "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2359628180770615&height=50&width=50&ext=1568297509&hash=AeR7lFY9JEHZp9-p",
+      "width": 50
+    }
+  },
+  "id": "XXXXX",
+  "accessToken": "XXXXXXXXXXXXX",
+  "userID": "XXXXX",
+  "expiresIn": 6492,
+  "signedRequest": "XXXXXXXXX",
+  "data_access_expiration_time": 1573481508
+}
+------------------------------------LINKEDIN-----------------------------------------------
+{
+  "code": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "from": "Linked In"
+}
+
+------------------------------------INSTAGRAM-----------------------------------------------
