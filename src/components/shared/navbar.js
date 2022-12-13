@@ -35,9 +35,9 @@ const NavBar = () => {
                 className={"nav-link js-scroll-trigger"}
                 activeClassName="shecluded-active"
                 exact
-                to={"/about"}
+                to={"/aboutUs"}
               >
-                About
+                About Us
               </NavLink>
             </li>
             <li className="nav-item">
