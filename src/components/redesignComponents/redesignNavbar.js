@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='navBar-container'>
+    <div className='navBar-container '>
 
         <div className="logo-container">
             <img src={require ('../../assets/newRedesign-assets/shecluded-logo.png')} />

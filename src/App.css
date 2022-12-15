@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;900&display=swap');
+
 
 :root{
     --primaryColor: #EB2590;
@@ -38,7 +40,7 @@ body{
 
 /* Nav bar */
 .navBar-container{
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,11 +95,13 @@ li.nav-list-items{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    /* margin: 0 auto; */
 }
-.about-content{
-    width: 90%;
-}
+/* .about-content{
+    width: 100%;
+} */
 .about-hero-section{
+    width: 95%;
     margin-bottom: 120px;
 }
 .about-hero-image {
@@ -145,11 +149,13 @@ li.nav-list-items{
     color: #333333;
 }
 .about-services{
-    width: 100%;
+    width: 95%;
 
     background: #FFF5F0;
     border-radius: 9.73822px;
     justify-content: space-between;
+    box-sizing: border-box !important;
+    margin-bottom: 97px;
 }
 .what-we-do ,
 .who-we-serve{
@@ -175,10 +181,115 @@ li.nav-list-items{
     color: #484848;
 }
 
+.about-note{
+    width: 100%;
+    height: 1296px;
+    background-color: #0E0008;
+    margin-bottom: 122px;
+}
 
+.about-note-para{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 108%;
+    /* or 76px */
 
+    padding-top: 96px;
+    box-sizing: border-box;
+    text-transform: capitalize;
 
+    color: #FFFFFF;
 
+}
+
+/* about figures */
+.about-figures{
+    width: 90%;
+    box-sizing: border-box;
+    background-color: #FFF3FB;
+    padding: 60px !important;
+    margin-bottom: 247px !important;
+}
+.about-figures-title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: left;
+    /* or 128% */
+    width: 1062px;
+
+    text-transform: capitalize;
+
+    color: #000000;
+}
+.about-figures-title span{
+    font-family: 'Playfair Display';
+    color: #ED1F8E;
+}
+
+.about-figures-img-div img{
+    width: 100%;
+}
+
+.about-figures-number-div-desc{
+    width: 269px;
+}
+
+.about-figures-number-div-desc .title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 95px;
+    /* identical to box height */
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+}
+.about-figures-number-div-desc .desc{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19.4947px;
+    line-height: 132.5%;
+    text-align: left;
+    /* or 26px */
+    
+    color: #000000;
+
+}
+                    /* CALL TO DOWNLOAD SECTION  */
+.download-section{
+    box-sizing: border-box;
+    width: 90%;
+    height: 219px;
+
+    background-image: linear-gradient(91.91deg, #ED1F8E 0%, #FBF2F2 100%);
+    border-radius: 15px;
+    margin-bottom: 129px;
+
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: uppercase;
+}
+.download-images img{
+    width: 48%;
+}
+.download-title{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.download-desc{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
                 /* Footer
 
 
@@ -345,13 +456,50 @@ li.footer-links{
 
             
                     /* Media queriess */
-
-@media screen and (max-width: 1300px) {
-    .navBar-container{
-        width: 90%;
+@media screen and (max-width: 1363px) {
+    .about-figures-number-div-desc {
+        width: 230px;
+    }
+    .about-figures-number-div-desc .title{
+        font-size: 70px;
+    }
+    .about-figures-number-div-desc .desc{
+        font-size: 16px;
+    }
+    .about-hero{
+        font-size: 54px;
     }
 }
+                  
+@media screen and (max-width: 1300px) {
+    .navBar-container{
+        /* width: 90%; */
+        margin-bottom: 100px;
+    }
+ 
+}
+
 @media screen and (max-width: 1220px) {
+    .about-services-title{
+        font-size: 30px;
+    }
+    .about-note-para{
+        font-size: 58px;
+        line-height: 200%;
+    }
+
+    .about-figures-title{
+        width: 90%;
+        font-size: 42px;
+    }
+        /* hero section */
+        .about-hero{
+            font-size: 54px;
+        }
+
+        /* hero about section above */
+
+
     .footer{
         padding: 85px 70px 45px 70px;
     }
@@ -359,14 +507,123 @@ li.footer-links{
     .second- ul {
         padding-left: 25px
     }
+/* footer above */
+
+    .about-page-wrapper{
+        width: 95%;
+    }
+    .about-content{
+        width: 95%;
+    }
+    .about-hero-section{
+        width: 95%;
+    }
+    .about-figures-number-div-desc .title{
+        font-size: 64px;
+    }
+    /* .about-hero-desc, */
+    .about-figures-number-div-desc .desc{
+        font-size: 16px;
+    }
 }
+@media screen and (max-width: 1199px) {
+    .about-us,
+    .about-hero{
+        text-align:center;
+    }
+
+    .about-hero-desc,
+    .about-services-desc,
+    .about-note-para{
+        text-align: justify;
+    }
+
+    .about-hero{
+        width: 60%;
+    }
+    
+    .what-we-do ,
+    .who-we-serve{
+        border-right: none;
+        border-bottom: 1px solid #EB2590;
+    }
+    .about-figures-title{
+        text-align: center;
+    }
+
+    .about-figures-number-div-desc .title{
+        
+        font-size: 52px;
+    }
+    .about-figures-number-div-desc .desc{
+        font-size: 14px;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .about-hero{
+        font-size: 48px;
+    }
+    .about-hero-image{
+        padding-left: 0;
+    }
+    .about-figures{
+        margin-bottom: 124px !important;
+    }
+
+    .download-text .download-desc{
+        font-size: 28px;
+    }
+    .download-images img{
+        width: 48%;
+    }
+}
+
 @media screen and (max-width: 1058px) {
+    .about-hero{
+        /* font-size: 44px; */
+    }
+    
+    .about-figures-title{
+        font-size: 38px;
+        line-height: 200%;
+    }
+
     .footer{
         padding: 60px 55px 40px 55px;
+    }
+    .download-text .download-desc{
+        font-size: 24px;
     }
 }
 
 @media screen and (max-width: 992px) {
+
+    .about-note{
+        height: 648px;
+    }
+
+    .about-note-para{
+        font-size: 36px;
+        line-height: 150%;
+    }
+    .about-figures-title{
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+        /* Download section */
+        .download-images{
+            /* height: 50%; */
+            width: min-content;
+            gap: 2em;
+        }
+        .download-images img{
+            width: 40%;
+        }
+
       /* footer */
       .footer{
         height: auto;
@@ -429,8 +686,42 @@ li.footer-links{
          display: flex;
      }
 }
+@media screen and (max-width: 925px){
+    .about-hero{
+        /* font-size: 32px; */
+        width: 70%;
+    }
+    .about-note-para{
+        font-size: 32px;
+    }
+    .about-figures-title{
+        /* font-size: 38px; */
+        width: 100% ;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .about-hero{
+        width: 80%;
+    }
+    .about-figures-title{
+        font-size: 26px;
+    }
+
+}
 
 @media screen and (max-width: 689px) {
+    .about-hero{
+        width: 90%;
+        
+        font-size: 44px;
+       
+    }
+
+    .about-figures-title{
+        font-size: 32px;
+    }
+
     .first- p{
         font-size: 18px;
         
@@ -462,6 +753,14 @@ li.footer-links{
     }
 }
 @media screen and (max-width: 580px) {
+    .about-note-para{
+        font-size: 26px;
+    }
+
+     .about-figures-title{
+        font-size: 28px;
+    }
+
     .first- p{
         width: 100%;
     }
@@ -472,9 +771,26 @@ li.footer-links{
     .third-{
         padding-right: 8px;
     }
+
+    /* download section */
+    .download-title{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 120%;
+    }
+    .download-text .download-desc{
+        font-size: 16px;
+        font-weight: 600;
+    }
 }
 
 @media screen and (max-width: 460px) {
+    .about-hero{
+        width: 100%;
+    }
+    .about-figures-title{
+        font-size: 22px;
+    }
     /* footer elemts */
     .first-,
     .second- ul,
@@ -495,9 +811,21 @@ li.footer-links{
     }
 
 }
+
+
 @media screen and (max-width: 400px) {
+    .about-figures-title{
+        font-size: 20px;
+    }
 
     body{
         min-width: 400px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .download-text .download-desc{
+        font-size: 16px;
+        font-weight: 400;
+        /* width: 80%; */
     }
 }
