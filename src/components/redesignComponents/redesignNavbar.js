@@ -1,6 +1,49 @@
 import React from 'react'
 
 const Navbar = () => {
+
+        const navList = document.getElementById('nav-List')
+        const signInBtn = document.getElementById('sign-in-div')
+        const navUl = document.getElementById('nav-ul')
+
+    //    { 
+    //     navList.addEventListener('click', () => {
+    //         navList.classList.remove('visible')
+    //         signInBtn.classList.remove('visible')
+    //         navUl.classList.remove('visible')
+    //     })
+    // }
+
+    const handleClick = () => {
+        const navList = document.getElementById('nav-List')
+        const signInBtn = document.getElementById('sign-in-hidden')
+        const navUl = document.getElementById('nav-ul')
+
+        // if (navList.classList.contains('visible')) {
+
+        //         navList.classList.remove('visible')
+        //         signInBtn.classList.remove('visible')
+        //         navUl.classList.remove('visible')
+                
+        // } else {
+        //     navList.classList.add('visible')
+        //     signInBtn.classList.add('visible')
+        //     navUl.classList.add('visible')
+        // }
+
+        // { 
+        //     navList.addEventListener('click', () => {
+        //         navList.classList.remove('visible')
+        //         signInBtn.classList.remove('visible')
+        //         navUl.classList.remove('visible')
+        //     })
+        // }
+        {
+            navList.classList.toggle('visible')
+            signInBtn.classList.toggle('visible')
+            navUl.classList.toggle('visible')}
+        }
+
   return (
     <div className='navBar-container '>
 
@@ -8,22 +51,25 @@ const Navbar = () => {
             <img src={require ('../../assets/newRedesign-assets/shecluded-logo.png')} />
         </div>
 
-        <div className="nav-list">
-            <ul>
-                <li className="nav-list-items">About Us</li>
-                <li className="nav-list-items">Learn</li>
-                <li className="nav-list-items">Loan</li>
-                <li className="nav-list-items">Insights</li>
-                <li className="nav-list-items">Community</li>
+        <div className="nav-list" id='nav-List'>
+            <ul id='nav-ul'>
+                <li className="nav-list-items pb-5 pb-lg-0">About Us</li>
+                <li className="nav-list-items pb-5 pb-lg-0">Learn</li>
+                <li className="nav-list-items pb-5 pb-lg-0">Loan</li>
+                <li className="nav-list-items pb-5 pb-lg-0">Insights</li>
+                <li className="nav-list-items pb-5 pb-lg-0">Community</li>
             </ul>
+            <div className="sign-in-div" id='sign-in-hidden'>
+                <button className="sign-in-btn">Sign In</button>
+            </div>
         </div>
 
-        <div className="sign-in-div">
+        <div className="sign-in-div" id='sign-in-div'>
             <button className="sign-in-btn">Sign In</button>
         </div>
 
         <div className='hamburger-div'>
-            <img className='hamburger-img' src={require ('../../assets/newRedesign-assets/hamburger.png')} alt='hamburger for menu'/>
+            <img className='hamburger-img' onClick={() => handleClick()} src={require ('../../assets/newRedesign-assets/hamburger.png')} alt='hamburger for menu'/>
         </div>
     </div>
   )

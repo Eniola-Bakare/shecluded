@@ -41,6 +41,7 @@ body{
 /* Nav bar */
 .navBar-container{
     width: 95%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,6 +49,7 @@ body{
     margin-bottom: 200px; 
     /* this margin, you might remove it when you get the actual height and can use juc- space-between. */
 }
+
 
 .nav-list ul{
     display: flex;
@@ -84,6 +86,10 @@ li.nav-list-items{
 .hamburger-div,
 .hamburger-img{
     width: 32px;
+    visibility: hidden;
+    display: none;
+}
+#sign-in-hidden{
     visibility: hidden;
     display: none;
 }
@@ -673,6 +679,9 @@ li.footer-links{
     }
 
      /* for nav-bar */
+     body{
+        position: relative;
+     }
      .nav-list,
      .sign-in-div{
          visibility: hidden;
@@ -685,6 +694,51 @@ li.footer-links{
          visibility: visible;
          display: flex;
      }
+     #sign-in-hidden{
+        visibility: visible;
+        display: flex;
+        width: 70%;
+    }
+    #sign-in-hidden .sign-in-btn{
+        width: 100%;
+        padding: 16px 10px;
+        text-align: center;
+        height: auto;
+    }
+     .nav-list.visible{
+         visibility:visible;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -40%);
+         height: 90vh;
+         width: 90%;
+         z-index: 100;
+
+         background-color: #FFFFFF;
+         border-radius: 15px;
+         box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+     }
+
+    #nav-ul.visible{
+        width: 100%;
+        height: 70%;
+        flex-direction: column;
+        
+    }
+    #nav-ul.visible .nav-list-items{
+        width: 100%;
+        text-align:center;
+        font-size: 28px;
+        line-height: 153.2%;
+        color: var(--textSecondary);
+        box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    }
 }
 @media screen and (max-width: 925px){
     .about-hero{
