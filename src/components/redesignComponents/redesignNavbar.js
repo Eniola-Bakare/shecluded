@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -31,13 +32,13 @@ const Navbar = () => {
         //     navUl.classList.add('visible')
         // }
 
-        // { 
-        //     navList.addEventListener('click', () => {
-        //         navList.classList.remove('visible')
-        //         signInBtn.classList.remove('visible')
-        //         navUl.classList.remove('visible')
-        //     })
-        // }
+        { 
+            navList.addEventListener('click', () => {
+                navList.classList.remove('visible')
+                signInBtn.classList.remove('visible')
+                navUl.classList.remove('visible')
+            })
+        }
         {
             navList.classList.toggle('visible')
             signInBtn.classList.toggle('visible')
@@ -53,11 +54,11 @@ const Navbar = () => {
 
         <div className="nav-list" id='nav-List'>
             <ul id='nav-ul'>
-                <li className="nav-list-items pb-5 pb-lg-0">About Us</li>
-                <li className="nav-list-items pb-5 pb-lg-0">Learn</li>
-                <li className="nav-list-items pb-5 pb-lg-0">Loan</li>
-                <li className="nav-list-items pb-5 pb-lg-0">Insights</li>
-                <li className="nav-list-items pb-5 pb-lg-0">Community</li>
+                <li className="nav-list-items pb-3 pb-lg-0"><Link to={'/aboutUs'}> About Us</Link></li>
+                <li className="nav-list-items pb-3 pb-lg-0">Learn</li>
+                <li className="nav-list-items pb-3 pb-lg-0">Loan</li>
+                <li className="nav-list-items pb-3 pb-lg-0">Insights</li>
+                <li className="nav-list-items pb-3 pb-lg-0">Community</li>
             </ul>
             <div className="sign-in-div" id='sign-in-hidden'>
                 <button className="sign-in-btn">Sign In</button>

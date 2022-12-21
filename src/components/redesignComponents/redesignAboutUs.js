@@ -25,17 +25,17 @@ const redesignAboutUs = () => {
 
           <div className="about-services row d-flex flex-md-row flex-column p-5 mx-auto">
             <div className="about-servies-para what-we-do col-12 col-xl-4 p-3 mt-5 mb-5">
-              <p className="about-services-title">WHAT WE DO</p>
+              <p className="about-services-title" id='what-we-do'>WHAT WE DO</p>
               <p className="about-services-desc">Shecluded provides a range of innovative financial opportunities for growth and the maintenance of financial growth for women entrepreneurs. On one hand, we grant you access to growth loans that helps you scale your business and build assets. On the other hand, we provide insurance that protects this growth we aim to foster. Shecluded aims to invest $1.3billion in loans to 200,000 Black-women entrepreneurs over the next ten years.</p>
             </div>
 
             <div className="about-servies-para who-we-serve col-12 col-xl-4 p-3 mt-5 mb-5">
-              <p className="about-services-title">WHO WE SERVE</p>
+              <p className="about-services-title" id='who-we-serve'>WHO WE SERVE</p>
               <p className="about-services-desc">Shecluded mission is to serve the female entrepreneur as a trusted financial partner by providing financial services from Growth Loans to Insurance policies that encourage and sustain her economic growth and viability.</p>
             </div>
 
             <div className="about-servies-para what-we-believe col-12 col-xl-4 p-3 mt-5 mb-5">
-              <p className="about-services-title">WHAT WE BELIEVE</p>
+              <p className="about-services-title" id='what-we-believe'>WHAT WE BELIEVE</p>
               <p className="about-services-desc">Creating a finance company for women can unlock new markets, attract and lead to innovation of new products or services. 
               <br></br>
               <br></br>

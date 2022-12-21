@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 
 :root{
@@ -94,7 +95,9 @@ li.nav-list-items{
     display: none;
 }
 
-/* About us page */
+                /* About us page 
+                
+                */
 .about-page-wrapper{
     width: 100%;
     display: flex;
@@ -268,7 +271,12 @@ li.nav-list-items{
     color: #000000;
 
 }
-                    /* CALL TO DOWNLOAD SECTION  */
+
+
+                    /* CALL TO DOWNLOAD SECTION 
+                    
+                    
+                    */
 .download-section{
     box-sizing: border-box;
     width: 90%;
@@ -296,6 +304,86 @@ li.nav-list-items{
     line-height: 40px;
     color: #FFFFFF;
 }
+
+
+            /* CONTACT US SECTION 
+                                
+                                
+                                */
+.contact-wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-div{
+    width: 90%;
+}
+.contact-title{
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 114%;
+    text-transform: capitalize;
+    color: #EB2590;
+}
+.contact-how-can-we-help{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 114%;
+    color: #283655;
+}
+.contact-fill-form{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 114%;
+    color: #283655;
+}
+.form-input-div{
+    width: 100%;
+    height: 70%;
+}
+.form-input-div input{
+    background: rgba(40, 54, 85, 0.04);
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 15px;
+    border-color: transparent;
+    outline: transparent;
+    height: 60px;
+
+}
+
+.message input{
+    height: 177px;
+}
+.form-input-div input:placeholder-shown{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 114%;
+    color: #283655;
+}
+.name-email input{
+    width: 48%;
+    height: 60px;
+
+}
+.form-img-div{
+    width: 40%;
+}
+.form-img-div img{
+    width: 100%;
+}
+
+
+
+
+
                 /* Footer
 
 
@@ -323,6 +411,12 @@ li.nav-list-items{
 .logo-white{
     width: 221px;
     padding-bottom: 24px;
+}
+.first-{
+    height: 227.94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .first- p{
     font-family: 'DM Sans';
@@ -419,7 +513,7 @@ li.footer-links{
     align-items: center;
 }
 .socials button img{
-    width: 50%;
+    width: 60%;
 }
 
 .install-div p {
@@ -566,6 +660,10 @@ li.footer-links{
         width: 80%;
         text-align: center;
     }
+
+    .second-{
+        /* flex-direction: column; */
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -585,13 +683,13 @@ li.footer-links{
     .download-images img{
         width: 48%;
     }
+
+    li.footer-links{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 1058px) {
-    .about-hero{
-        /* font-size: 44px; */
-    }
-    
     .about-figures-title{
         font-size: 38px;
         line-height: 200%;
@@ -635,9 +733,9 @@ li.footer-links{
         height: auto;
         align-items: center;
     }
-    .footer-links{
+    /* .footer-links{
         font-size: 14px;
-    }
+    } */
     .div-1-footer{
         flex-direction: column;
         align-items: center;
@@ -645,10 +743,13 @@ li.footer-links{
     }
     .first- {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        height: auto;
         width: 100%;
     }
+    .second-
     .logo-white{
         width: 25%;
     }
@@ -716,18 +817,18 @@ li.footer-links{
          top: 50%;
          left: 50%;
          transform: translate(-50%, -40%);
-         height: 90vh;
+         height: auto;
          width: 90%;
          z-index: 100;
 
+         padding: 35px 25px;
          background-color: #FFFFFF;
          border-radius: 15px;
          box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
      }
 
     #nav-ul.visible{
-        width: 100%;
-        height: 70%;
+        width: 70%;
         flex-direction: column;
         
     }
@@ -858,9 +959,6 @@ li.footer-links{
         padding: 0;
     }
     .copyright{
-        padding: 0;
-    }
-    .logo-white{
         padding: 0;
     }
 

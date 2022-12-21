@@ -33,7 +33,10 @@ const BusinessListing = lazy(() => import("./components/home/BusinessList"));
 const Chat = lazy(() => import("./components/home/Chat"));
 const Faq = lazy(() => import("./components/home/faq"));
 const LoansStatic = lazy(() => import("./components/home/loans"));
-const redesignAboutUs = lazy(() => import("./components/redesignComponents/redesignAboutUs"));
+
+const redesignAboutUs = lazy(() => import("./components/redesignComponents/redesignAboutUs")); //here is the rredesigned line
+const redesignContactUs = lazy(() => import("./components/redesignComponents/redesignContactUs")); 
+
 const UserGuard = lazy(() => import("./components/guards/user-guard"));
 const ScrollTop = lazy(() => import("./components/shared/scroll-top"));
 const LoanApplication = lazy(() =>
@@ -66,8 +69,11 @@ class App extends Component {
                 <Route exact path="/blog" component={Blog} />
                 <Route exact path="/loan" component={LoansStatic} />
                 <Route exact path="/blog/:id" component={BlogDetails} />
+                
                 <Route exact path="/aboutUs" component={redesignAboutUs} />
-                <Route exact path="/contact" component={ContactUs} />
+
+                {/* <Route exact path="/contact" component={ContactUs} /> */}
+                <Route exact path='/contact' component={redesignContactUs}/>
                 <Route exact path="/faq" component={Faq} />
                 <Route exact path="/login" component={LoginPage} />
                 <Route exact path="/register" component={RegisterPage} />
