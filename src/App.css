@@ -311,7 +311,7 @@ li.nav-list-items{
                                 
                                 */
 .contact-wrapper{
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -342,25 +342,36 @@ li.nav-list-items{
     line-height: 114%;
     color: #283655;
 }
+.form-section{
+    margin-bottom: 97.74px;
+}
+
 .form-input-div{
     width: 100%;
-    height: 70%;
 }
 .form-input-div input{
     background: rgba(40, 54, 85, 0.04);
     border-radius: 10px;
     width: 100%;
-    padding-left: 15px;
+    padding-left: 25px;
     border-color: transparent;
     outline: transparent;
     height: 60px;
 
 }
 
-.message input{
+.message textarea{
     height: 177px;
+    background: rgba(40, 54, 85, 0.04);
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 25px;
+    border-color: transparent;
+    outline: transparent;
 }
-.form-input-div input:placeholder-shown{
+.form-input-div input:placeholder-shown,
+.message textarea:placeholder-shown{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -379,9 +390,126 @@ li.nav-list-items{
 .form-img-div img{
     width: 100%;
 }
+.send-btn{
+    width: 240.03px;
+    height: 56.26px;
+
+    background: #EB2590;
+    border-radius: 5.6256px;
+    border-color: transparent;
+
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 17.5142px;
+    line-height: 153.2%;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.get-in-touch{
+    margin-bottom: 97.74px;
+}
+.get-in-touch-title{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 114%;
+    color: #283655;
+    margin-bottom: 43px;
+}
+.contact-address-div .contact-address-title{
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.16em;
+    color: #1E1F26;
+    text-transform: uppercase;
+}
+.contact-info{
+    width: 382.31px;
+    height: 81px;
+
+    background: #FEF4F9;
+    border: 1px solid rgba(235, 37, 144, 0.16);
+    border-radius: 10px;
+    font-family: 'Lato';
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 114%;
+    color: #283655;
+
+}
 
 
+            /* Terms and condition styling
+            
+            */
+.terms-wrapper{
+    width: 90%;
+}
+.legal-info{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 114%;
+    text-align: center;
 
+    color: #283655;
+}
+.tab-container{
+    width: 110%;
+    height: 74.04px;
+
+    background: #ED1F8E;
+    border-radius: 6px;
+}
+
+.tab{
+    width: 280px;
+    height: 60px;
+    background: #FFFFFF;
+}
+.tab a,
+.tab a:link{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    line-height: 216.32%;
+    color: white !important;
+}
+.tab a:visited,
+.tab a:hover,
+.tab a:active{
+    font-size: 18px;
+    text-align: center;
+    color: #000000 !important;
+    text-decoration: none;
+}
+.divider{
+    background-color: #283655;
+    /* width: 2px; */
+    height: 85%;
+    border: 1px solid white;
+}
+.border-right.border-light{
+    border: 10px solid #FFFFFF;
+    position: absolute;
+}
+
+
+.terms-body h5,
+ul li h5{
+    width: 100%;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 230.1%;
+    text-align: justify;
+
+    color: #000000;
+}
 
 
                 /* Footer
@@ -576,6 +704,9 @@ li.footer-links{
         /* width: 90%; */
         margin-bottom: 100px;
     }
+    .contact-info{
+        width: 300px;
+    }
  
 }
 
@@ -718,6 +849,34 @@ li.footer-links{
         line-height: 150%;
     }
 
+            /* contact us page */
+.name-email input{
+    width: 100%;
+    height: 60px;
+
+}
+.form-img-div{
+    width: 50%;
+}
+.contact-info{
+    width: 100%;
+}
+
+            /* TERMS AND CONDITIONS PAGE
+            
+             */
+.tab-container{
+    width: 110%;
+}
+
+.tab{
+    width: 200px;
+    height: 60px;
+}
+.tab a:link{
+    line-height: 100%;
+}
+
         /* Download section */
         .download-images{
             /* height: 50%; */
@@ -853,6 +1012,13 @@ li.footer-links{
         /* font-size: 38px; */
         width: 100% ;
     }
+
+     /* footer elements */
+     .first-{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 27px;
+    }
     
 }
 @media screen and (max-width: 767px) {
@@ -861,6 +1027,16 @@ li.footer-links{
     }
     .about-figures-title{
         font-size: 26px;
+    }
+    .legal-info{
+        font-size: 50px;
+    }
+    .tab-container{
+        width: 110%;
+    }
+    .tab{
+        width:30%;
+        text-align: center;
     }
 
 }
@@ -892,20 +1068,20 @@ li.footer-links{
     .newsletter-div{
         width: 50%;
     }
+    .legal-info{
+        font-size: 40px;
+    }
 }
 @media screen and (max-width: 600px) {
-    /* footer elements */
-    .first-{
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 27px;
-    }
+   
     .third-{
         padding-left: 29px;
     }
     .newsletter-div {
         width: 80%;
     }
+
+    
 }
 @media screen and (max-width: 580px) {
     .about-note-para{
@@ -936,6 +1112,10 @@ li.footer-links{
     .download-text .download-desc{
         font-size: 16px;
         font-weight: 600;
+    }
+
+    .legal-info{
+        font-size: 34px;
     }
 }
 
@@ -973,11 +1153,27 @@ li.footer-links{
     body{
         min-width: 400px;
     }
+    .legal-info{
+        font-size: 28px;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 375px) {
     .download-text .download-desc{
         font-size: 16px;
         font-weight: 400;
         /* width: 80%; */
+    }
+    .tab-container{
+        height: 45px;
+    }
+    .tab{
+        height: 80%;
+    }
+    .tab a:link{
+        font-size: 12px;
+    }
+    .divider{
+        height: 70%;
     }
 }

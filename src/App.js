@@ -11,6 +11,7 @@ import "./styles/scss/responsive.scss";
 import Preloader from "./components/shared/preloader";
 import ErrorBoundary from "./components/shared/error-boundary";
 import SourcesOfIncome from "./components/dashboard/sources-of-income";
+import redesignFAQ from "./components/redesignComponents/redesignFAQ";
 const LoginPage = lazy(() => import("./components/auth/login"));
 const RegisterPage = lazy(() => import("./components/auth/register"));
 const CompleteRegistration = lazy(() =>
@@ -31,10 +32,11 @@ const BlogDetails = lazy(() => import("./components/home/BlogDetials"));
 const ContactUs = lazy(() => import("./components/home/contact-us"));
 const BusinessListing = lazy(() => import("./components/home/BusinessList"));
 const Chat = lazy(() => import("./components/home/Chat"));
-const Faq = lazy(() => import("./components/home/faq"));
+// const Faq = lazy(() => import("./components/home/faq"));
+const redesignFaq = lazy(() => import("./components/redesignComponents/redesignFAQ")); //here is the redesigned FAQ
 const LoansStatic = lazy(() => import("./components/home/loans"));
 
-const redesignAboutUs = lazy(() => import("./components/redesignComponents/redesignAboutUs")); //here is the rredesigned line
+const redesignAboutUs = lazy(() => import("./components/redesignComponents/redesignAboutUs")); //here is the redesigned about us
 const redesignContactUs = lazy(() => import("./components/redesignComponents/redesignContactUs")); 
 
 const UserGuard = lazy(() => import("./components/guards/user-guard"));
@@ -44,7 +46,9 @@ const LoanApplication = lazy(() =>
 ); 
 
 const Error404 = lazy(() => import("./components/errors/error404"));
-const Terms = lazy(() => import("./components/home/Terms"))
+// const Error404 = lazy(() => import("./components/errors/error404"));
+// const Terms = lazy(() => import("./components/home/Terms"))
+const Terms = lazy(() => import("./components/redesignComponents/redesignTerms")) //redesignedTerms
 const Wealth = lazy(() => import("./components/wealth"));
 const WealthPay = lazy(() => import("./components/wealth/WealthPay"));
 const Calculate = lazy(() => import("./components/wealth/Calculate"));
@@ -74,7 +78,8 @@ class App extends Component {
 
                 {/* <Route exact path="/contact" component={ContactUs} /> */}
                 <Route exact path='/contact' component={redesignContactUs}/>
-                <Route exact path="/faq" component={Faq} />
+                {/* <Route exact path="/faq" component={Faq} /> */}
+                <Route exact path="/faq" component={redesignFaq} />
                 <Route exact path="/login" component={LoginPage} />
                 <Route exact path="/register" component={RegisterPage} />
 

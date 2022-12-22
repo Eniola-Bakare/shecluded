@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class ErrorBoundary extends Component {
 	constructor(props) {
@@ -16,19 +17,17 @@ class ErrorBoundary extends Component {
 		console.log(error, info)
 	}
 
+// this is actually the copy modified to meet the new design
+
 	render(){
 		if (this.state.hasError) {
 			return (
 				<div>
-                    <div className="container-fluid main-container">
-                        <div className="row hero-header small-vertical-padding">
-                            <div className="col-12 d-flex justify-content-center">
-                                <div className="align-self-center">
-                                    <h1 className="text-center alt-font text-shecluded heading-xl">Error</h1>
-                                    <h4 className="text-center">This Page Broke. If this error persists, please contact Shecluded admin.</h4>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="">
+                        <img src={require ('../../assets/newRedesign-assets/error-image.png')} />
+						<p>Money Isn't Here Yet Sis</p>
+						<p>You have found a page that doesn't exist yet, return to previous page or home page</p>
+						<button><Link to={'/home'}>RETURN TO HOMEPAGE</Link> </button>
                     </div>
                 </div>
 			)

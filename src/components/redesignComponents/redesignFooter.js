@@ -25,7 +25,7 @@ const Footer = () => {
 					<ul>
 						<li className="footer-links first-link"><strong>Support</strong></li>
 						<li className="footer-links">Help Center</li>
-						<li className="footer-links">FAQs</li>
+						<li className="footer-links"> <Link to={'/faq'}>FAQs</Link> </li>
 						<li className="footer-links">Community</li>
 						<li className="footer-links"><Link to={'/contact'}> Contact Us</Link></li>
 						<li className="footer-links">Careers</li>
@@ -34,7 +34,7 @@ const Footer = () => {
 						<li className="footer-links first-link"><strong>Legal</strong></li>
 						<li className="footer-links">Cookies Policy</li>
 						<li className="footer-links">Privacy Policy</li>
-						<li className="footer-links">Terms of Service</li>
+						<li className="footer-links"><Link to={'/terms'}> Terms of Service</Link></li>
 					</ul>
 				</div>
 				<div className="third-">
