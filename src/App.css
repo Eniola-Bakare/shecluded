@@ -86,7 +86,7 @@ li.nav-list-items{
 }
 .hamburger-div,
 .hamburger-img{
-    width: 32px;
+    font-size: 50px;
     visibility: hidden;
     display: none;
 }
@@ -689,6 +689,7 @@ ul li h5{
     height: 62.87px;
     background: #000000;
     border-radius: 6.28695px;
+    border: none;
 
     font-family: 'Lato';
     font-style: normal;
@@ -832,14 +833,17 @@ li.footer-links{
     justify-content:center;
     align-items: center;
 }
-.socials button img{
-    width: 60%;
+.socials button i{
+    font-size: 20px;
+    color: #FFFFFF;
 }
-
 .install-div p {
     font-size: 14.3px;
     font-weight: 700;
     line-height: 22px;
+    font-family: 'Maven Pro', sans-serif;
+    font-feature-settings: 'liga' off;
+    color: #F4F5F7;
 }
 .install-apps {
     display: flex;
@@ -898,6 +902,9 @@ li.footer-links{
     }
     .contact-info{
         width: 300px;
+    }
+    .error-content{
+        margin-bottom: 100px;
     }
  
 }
@@ -983,10 +990,6 @@ li.footer-links{
         width: 80%;
         text-align: center;
     }
-
-    .second-{
-        /* flex-direction: column; */
-    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1000,6 +1003,9 @@ li.footer-links{
         margin-bottom: 124px !important;
     }
 
+    .error-title{
+        font-size: 53px;
+    }
     .download-text .download-desc{
         font-size: 28px;
     }
@@ -1010,12 +1016,16 @@ li.footer-links{
     li.footer-links{
         font-size: 14px;
     }
+   
 }
 
 @media screen and (max-width: 1058px) {
     .about-figures-title{
         font-size: 38px;
         line-height: 200%;
+    }
+    .contact-info{
+        width: 280px;
     }
 
     .footer{
@@ -1167,7 +1177,7 @@ li.footer-links{
          position: absolute;
          top: 50%;
          left: 50%;
-         transform: translate(-50%, -40%);
+         transform: translate(-50%, -33%);
          height: auto;
          width: 90%;
          z-index: 100;
@@ -1181,7 +1191,6 @@ li.footer-links{
     #nav-ul.visible{
         width: 70%;
         flex-direction: column;
-        
     }
     #nav-ul.visible .nav-list-items{
         width: 100%;
@@ -1205,6 +1214,9 @@ li.footer-links{
         width: 100% ;
     }
 
+    .error-title{
+        font-size: 48px;
+    }
      /* footer elements */
      .first-{
         flex-direction: column;
@@ -1212,6 +1224,14 @@ li.footer-links{
         padding-left: 27px;
     }
     
+}
+@media screen and (max-width: 863px) {
+    .error-title{
+        font-size: 42px;
+    }
+    .error-content{
+        width: 80%;
+    }
 }
 @media screen and (max-width: 767px) {
     .about-hero{
@@ -1229,6 +1249,17 @@ li.footer-links{
     .tab{
         width:30%;
         text-align: center;
+    }
+    .error-title{
+        /* font-size: 38px; */
+        margin-bottom: 25px;
+    }
+    .error-text{
+        font-size: 16px;
+    }
+    .error-btn{
+        width: 220.24px;
+        font-size: 16px;
     }
 
 }
@@ -1263,6 +1294,15 @@ li.footer-links{
     .legal-info{
         font-size: 40px;
     }
+    .error-content{
+        width: 90%;
+    }
+
+    .error-btn{
+        width: 180.24px;
+        font-size: 14px;
+        height: 52px;
+    }
 }
 @media screen and (max-width: 600px) {
    
@@ -1272,8 +1312,6 @@ li.footer-links{
     .newsletter-div {
         width: 80%;
     }
-
-    
 }
 @media screen and (max-width: 580px) {
     .about-note-para{
@@ -1282,6 +1320,13 @@ li.footer-links{
 
      .about-figures-title{
         font-size: 28px;
+    }
+    .error-title{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .error-text{
+        font-size: 14px;
     }
 
     .first- p{
@@ -1317,6 +1362,12 @@ li.footer-links{
     }
     .about-figures-title{
         font-size: 22px;
+    }
+    .error-title{
+        font-size: 28px;
+    }
+    .error-text{
+        font-size: 12px;
     }
     /* footer elemts */
     .first-,

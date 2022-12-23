@@ -70,7 +70,8 @@ const Navbar = () => {
         </div>
 
         <div className='hamburger-div'>
-            <img className='hamburger-img' onClick={() => handleClick()} src={require ('../../assets/newRedesign-assets/hamburger.png')} alt='hamburger for menu'/>
+            <i className="uil uil-bars hamburger-img" onClick={() => handleClick()}></i>
+            {/* <img className='hamburger-img' onClick={() => handleClick()} src={require ('../../assets/newRedesign-assets/hamburger.png')} alt='hamburger for menu'/> */}
         </div>
     </div>
   )
