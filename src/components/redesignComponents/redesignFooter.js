@@ -35,6 +35,7 @@ const Footer = () => {
 						<li className="footer-links">Cookies Policy</li>
 						<li className="footer-links">Privacy Policy</li>
 						<li className="footer-links"><Link to={'/terms'}> Terms of Service</Link></li>
+						<li className="footer-links"><Link to={'/bb'}> error 404</Link></li>
 					</ul>
 				</div>
 				<div className="third-">

@@ -654,7 +654,56 @@ ul li h5{
     font-size: 20px;
     color: #FFFFFF;
 }
+.error-page-wrapper{
+    width: 100%;
+}
+.error-content{
+    width: 60%;
+    margin-bottom: 200px;
+}
+.error-content img{
+    width: 60%;
+    margin-bottom: 32.28px;
+}
+.error-title{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 67.0537px;
+    line-height: 104.2%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #151E3F;
+    margin-bottom: 33.68px;
+}
+.error-text{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 22.047px;
+    line-height: 165%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 32.28px;
+}
+.error-btn{
+    width: 268.24px;
+    height: 62.87px;
+    background: #000000;
+    border-radius: 6.28695px;
 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.5731px;
+    line-height: 153.2%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.error-btn a{
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
                 /* Footer
 
 
