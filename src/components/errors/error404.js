@@ -1,24 +1,19 @@
 import React, { Component } from "react";
-import Footer from "../shared/footer";
-import NavBar from "../shared/navbar";
+import { Link } from "react-router-dom";
+import Footer from "../redesignComponents/redesignFooter";
+import Navbar from "../redesignComponents/redesignNavbar";
 
 class Error404 extends Component {
   render() {
     return (
-      <div>
-        <NavBar />
-        <div className="container-fluid main-container my-5">
-          <div className="row hero-header lg-vertical-padding my-5">
-            <div className="col-12 d-flex justify-content-center">
-              <div className="align-self-center my-3">
-                <h1 className="text-center alt-font text-shecluded heading-xl">
-                  404
-                </h1>
-                <h4 className="text-center">Page Not Found</h4>
-              </div>
-            </div>
+      <div className='error-page-wrapper d-flex flex-column justify-content-between align-items-center'>
+        <Navbar />
+          <div className="error-content d-flex flex-column justify-content-between align-items-center">
+              <img src={require ('../../assets/newRedesign-assets/error-image.png')} />
+              <h1 className="error-title">Money Isn't Here Yet Sis</h1>
+              <h5 className="error-text">You have found a page that doesn't exist yet,<br></br> return to previous page or home page</h5>
+              <button className="error-btn"><Link to={'/welcome'}>RETURN TO HOMEPAGE</Link> </button>
           </div>
-        </div>
         <Footer />
       </div>
     );
