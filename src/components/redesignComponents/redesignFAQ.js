@@ -64,14 +64,14 @@ const redesignFAQ = () => {
       {/* <div className="faq-wrapper">
          */}
 
-        <div className="faq-body px-5 py-5 my-5">
+        <div className="faq-body py-4 px-4 px-lg-5 py-lg-5 my-5">
           {
             faqQuestions.map((eachQuestion, i) => 
               (
-                <div className="each-faq-div px-5 py-5 d-flex justify-content-between align-items-start border-bottom" key={eachQuestion.serialNumber}>
+                <div className="each-faq-div py-3 py-lg-5 d-flex justify-content-between align-items-start border-bottom" key={eachQuestion.serialNumber}>
                     <div className="question-number d-flex justify-content-start align-items-start">
-                      <h1 className='faq-number d-flex align-items-start'>{eachQuestion.serialNumber}</h1>
-                      <div className="question-answer-div pl-5" >
+                      <h1 className='faq-number d-flex justify-content-start align-items-start'>{eachQuestion.serialNumber}</h1>
+                      <div className="question-answer-div pl-3 pl-md-5 d-flex flex-column justify-content-center align-items-start" >
                         <h2 className='faq-question ' onClick={() => toggle(i)}>{eachQuestion.question}</h2>
                         <h3 className={selected === i ? 'faq-answer show' : 'faq-answer '}>{eachQuestion.answer}</h3>
                       </div>

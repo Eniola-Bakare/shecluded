@@ -4,6 +4,53 @@ import Footer from './redesignFooter'
 import Navbar from './redesignNavbar'
 
 const redesignTerms = () => {
+
+    const tabLink1 = document.getElementById('1');
+    const tabLink2 = document.getElementById('2');
+    const tabLink3 = document.getElementById('3');
+    if(tabLink1){
+      tabLink1.addEventListener('click', () => {
+        console.log('aaaaaa')
+        tabLink1.classList.toggle('active')
+        tabLink1.parentElement.classList.toggle('active')
+
+        tabLink2.classList.remove('active')
+        tabLink2.parentElement.classList.remove('active')
+
+        tabLink3.classList.remove('active')
+        tabLink3.parentElement.classList.remove('active')
+      })
+    }
+       
+    if(tabLink2){
+      tabLink2.addEventListener('click', () =>{
+        console.log('bbbb')
+        tabLink1.classList.remove('active')
+        tabLink1.parentElement.classList.remove('active')
+
+        tabLink2.classList.toggle('active')
+        tabLink2.parentElement.classList.toggle('active')
+
+        tabLink3.classList.remove('active')
+        tabLink3.parentElement.classList.remove('active')
+      })
+    }
+      
+    if(tabLink3){
+      tabLink3.addEventListener('click', ()=>{
+        console.log('ccc')
+        tabLink1.classList.remove('active')
+        tabLink1.parentElement.classList.remove('active')
+
+        tabLink2.classList.remove('active')
+        tabLink2.parentElement.classList.remove('active')
+
+        tabLink3.classList.toggle('active')
+        tabLink3.parentElement.classList.toggle('active')
+      })
+    }
+    
+
   return (
     <>
         <div className="terms-wrapper d-flex flex-column justify-content-center mx-auto">
@@ -13,15 +60,15 @@ const redesignTerms = () => {
                     <h1 className='legal-info mb-5'>Legal Information</h1>
                     <div className="tab-container px-2 py-0 px-md-2 py-md-3 d-flex justify-content-between align-items-center">
                       <div className="tab d-flex justify-content-center align-items-center">
-                        <a id='1' href="#privacy">Privacy Policy</a>
+                        <a id='1' className='tab-links' href="#privacy">Privacy Policy</a>
                       </div>
                       <div className="divider"></div>
                       <div className="tab d-flex justify-content-center align-items-center">
-                        <a id='2' href="#risk-disclosuree">Risk Disclosure Notice</a>
+                        <a id='2' className='tab-links' href="#risk-disclosure">Risk Disclosure Notice</a>
                       </div>
                       <div className="divider"></div>
                       <div className="tab d-flex justify-content-center align-items-center">
-                        <a id='3' href="#cookies">Cookie Policy</a>
+                        <a id='3' className='tab-links' href="#cookies">Cookie Policy</a>
                       </div>
                     </div>
                 </div>
@@ -115,6 +162,7 @@ const redesignTerms = () => {
         <Footer />
     </>
   )
-}
+  }
+
 
 export default redesignTerms

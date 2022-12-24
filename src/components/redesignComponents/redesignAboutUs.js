@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './redesignFooter'
 import Navbar from './redesignNavbar'
 import RedesignCallToDownload from './redesignCallToDownload'
+import RedesignTestimonial from './redesignTestimonial'
 
 const redesignAboutUs = () => {
   return (
@@ -82,6 +83,7 @@ const redesignAboutUs = () => {
           </div>
 
           <RedesignCallToDownload />
+          <RedesignTestimonial />
         {/* </div> */}
 
         <Footer />

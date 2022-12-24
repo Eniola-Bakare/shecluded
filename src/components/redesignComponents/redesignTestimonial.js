@@ -1,10 +1,10 @@
 import React from 'react'
 
-const redesignTestimonial = () => {
+const RedesignTestimonial = () => {
   return (
     <div className="building-for-women">
         <div className='build-image-div'>
-          <img src={require ('../assets/forWomen.png')} alt="" />
+          <img src={require ('../../assets/newRedesign-assets/forWomen.png')} alt="" />
         </div>
             <div className='women-text-wrapper'>
               <p className='women-title'>Building <span>For Women</span></p>
@@ -12,10 +12,10 @@ const redesignTestimonial = () => {
               {/* swipe controls */}
               <div className="swipe-testimonial">
                 <div className="left-swipe swiper">
-                  <img src={require ('../assets/rightArrow.png')} />
+                  <img src={require ('../../assets/newRedesign-assets/rightArrow.png')} />
                 </div>
                 <div className="right-swipe swiper">
-                  <img src={require ('../assets/leftArrow.png')} />
+                  <img src={require ('../../assets/newRedesign-assets/leftArrow.png')} />
                 </div>
               </div>
               <p className='swipe-name'>- Excellence</p>
@@ -24,4 +24,4 @@ const redesignTestimonial = () => {
   )
 }
 
-export default redesignTestimonial
+export default RedesignTestimonial

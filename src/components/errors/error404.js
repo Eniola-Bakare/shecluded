@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Footer from "../redesignComponents/redesignFooter";
 import Navbar from "../redesignComponents/redesignNavbar";
 
-
 class Error404 extends Component {
   render() {
     return (
