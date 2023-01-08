@@ -69,7 +69,7 @@ const redesignFAQ = () => {
           {
               faqQuestions.filter(item => {
                 return(
-                  search.toLowerCase() ==='' ? item : item.question.toLowerCase().includes(search) || item.answer.toLowerCase().includes(search)
+                  search.toLowerCase() ==='' ? item : item.question.toLowerCase().includes(search.toLowerCase()) || item.answer.toLowerCase().includes(search.toLowerCase())
                 )
               }).map((eachQuestion, i) => 
                 (
@@ -101,8 +101,6 @@ const redesignFAQ = () => {
           }
 
         </div>
-
-      {/* </div> */}
       <Footer />
     </>
   )
