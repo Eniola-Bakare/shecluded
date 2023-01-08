@@ -557,6 +557,7 @@ li.nav-list-items{
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
     line-height: 216.32%;
+    color: #FFFFFF !important;
 }
 .tab a:visited,
 .tab a:hover,
