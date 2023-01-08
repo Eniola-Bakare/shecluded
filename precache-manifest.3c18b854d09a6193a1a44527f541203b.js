@@ -296,16 +296,16 @@ self.__precacheManifest = [
     "url": "/shecluded/static/media/fa-brands-400.273dc9bf.ttf"
   },
   {
-    "revision": "3ac49cb33f43a6471f21ab3df40d1b1e",
-    "url": "/shecluded/static/media/fa-regular-400.3ac49cb3.eot"
-  },
-  {
     "revision": "9efb86976bd53e159166c12365f61e25",
     "url": "/shecluded/static/media/fa-regular-400.9efb8697.woff2"
   },
   {
     "revision": "a57bcf76c178aee452db7a57b75509b6",
     "url": "/shecluded/static/media/fa-regular-400.a57bcf76.woff"
+  },
+  {
+    "revision": "3ac49cb33f43a6471f21ab3df40d1b1e",
+    "url": "/shecluded/static/media/fa-regular-400.3ac49cb3.eot"
   },
   {
     "revision": "ece54318791c51b52dfdc689efdb6271",
@@ -320,16 +320,16 @@ self.__precacheManifest = [
     "url": "/shecluded/static/media/fa-solid-900.7fb1cdd9.eot"
   },
   {
-    "revision": "f6121be597a72928f54e7ab5b95512a1",
-    "url": "/shecluded/static/media/fa-solid-900.f6121be5.woff2"
-  },
-  {
     "revision": "93f284548b42ab76fe3fd03a9d3a2180",
     "url": "/shecluded/static/media/fa-solid-900.93f28454.woff"
   },
   {
     "revision": "2aa6edf8f296a43b32df35f330b7c81c",
     "url": "/shecluded/static/media/fa-solid-900.2aa6edf8.ttf"
+  },
+  {
+    "revision": "f6121be597a72928f54e7ab5b95512a1",
+    "url": "/shecluded/static/media/fa-solid-900.f6121be5.woff2"
   },
   {
     "revision": "d72293118cda50ec50c39957d9d836d0",
@@ -352,12 +352,12 @@ self.__precacheManifest = [
     "url": "/shecluded/static/media/TTCommons-DemiBold.5731d97f.ttf"
   },
   {
-    "revision": "a7d226cc9d9a7936e3b57ab9f303b8ca",
-    "url": "/shecluded/static/media/TTCommons-Medium.a7d226cc.ttf"
-  },
-  {
     "revision": "64f3f998447493fc2bf1019fd0bebdc2",
     "url": "/shecluded/static/media/TTCommons-Regular.64f3f998.ttf"
+  },
+  {
+    "revision": "a7d226cc9d9a7936e3b57ab9f303b8ca",
+    "url": "/shecluded/static/media/TTCommons-Medium.a7d226cc.ttf"
   },
   {
     "revision": "56746831e3e1a33da6ffcf2eafd41a9f",
@@ -368,12 +368,12 @@ self.__precacheManifest = [
     "url": "/shecluded/static/media/core.68e9ecfc.png"
   },
   {
-    "revision": "08f88f1d689dddd4e7be881bc41b5d4c",
-    "url": "/shecluded/static/media/missionbg.08f88f1d.png"
-  },
-  {
     "revision": "0bf280388937448d38392b76c15bd441",
     "url": "/shecluded/static/media/whatsappBackground.0bf28038.jpg"
+  },
+  {
+    "revision": "08f88f1d689dddd4e7be881bc41b5d4c",
+    "url": "/shecluded/static/media/missionbg.08f88f1d.png"
   },
   {
     "revision": "2ee68622de605cdcc78c0e87351f98b3",
