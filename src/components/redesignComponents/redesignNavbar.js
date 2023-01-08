@@ -19,6 +19,7 @@ const Navbar = () => {
         const navList = document.getElementById('nav-List')
         const signInBtn = document.getElementById('sign-in-hidden')
         const navUl = document.getElementById('nav-ul')
+        const closeIcon = document.getElementById('close-icon')
 
         // if (navList.classList.contains('visible')) {
 
@@ -36,14 +37,27 @@ const Navbar = () => {
             navList.addEventListener('click', () => {
                 navList.classList.remove('visible')
                 signInBtn.classList.remove('visible')
+                console.log('removed sign in btn')
                 navUl.classList.remove('visible')
             })
         }
         {
+            closeIcon.addEventListener('click', () => {
+                navList.classList.remove('visible')
+                signInBtn.classList.remove('visible')
+                console.log('removed sign in btn')
+                navUl.classList.remove('visible')
+                closeIcon.classList.remove('active')
+            })
+        }
+        {
+            
             navList.classList.toggle('visible')
             signInBtn.classList.toggle('visible')
-            navUl.classList.toggle('visible')}
+            navUl.classList.toggle('visible')
+            closeIcon.classList.add('active')
         }
+    }
 
   return (
     <div className='navBar-container '>
@@ -53,6 +67,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav-list" id='nav-List'>
+            <i className="uil uil-times active"  id='close-icon' ></i>
             <ul id='nav-ul'>
                 <li className="nav-list-items pb-3 pb-lg-0"><Link to={'/aboutUs'}> About Us</Link></li>
                 <li className="nav-list-items pb-3 pb-lg-0">Learn</li>

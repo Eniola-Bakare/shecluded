@@ -90,7 +90,7 @@ const redesignContactUs = () => {
 			</div>
         </div>
 
-        <RedesignCallToDownload />
+        {/* <RedesignCallToDownload /> */}
         <Footer />
     </div>
   )

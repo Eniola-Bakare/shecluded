@@ -85,7 +85,8 @@ li.nav-list-items{
     line-height: 153.2%;
 }
 .hamburger-div,
-.hamburger-img{
+.hamburger-img,
+#close-icon{
     font-size: 50px;
     visibility: hidden;
     display: none;
@@ -526,6 +527,9 @@ li.nav-list-items{
 .terms-wrapper{
     width: 90%;
 }
+.terms-header-content{
+    width: 100%;
+}
 .legal-info{
     font-family: 'Playfair Display';
     font-style: normal;
@@ -537,42 +541,39 @@ li.nav-list-items{
     color: #283655;
 }
 .tab-container{
-    width: 110%;
+    width: 70%;
     height: 74.04px;
 
     background: #ED1F8E;
     border-radius: 6px;
 }
 
-.tab{
-    width: 280px;
-    height: 60px;
-    background-color: transparent;
-}
-.tab.active{
-    background: #FFFFFF;
-}
-.tab a,
-.tab a:link{
+
+button.tab-links{
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
     line-height: 216.32%;
+    background: transparent;
+    border: none;
+    outline: transparent;
     color: #FFFFFF !important;
+    margin: 0;
+    padding: 2px 12px;
+    box-sizing: border-box;
 }
-.tab a:visited,
-.tab a:hover,
-.tab a:active{
-    font-size: 18px;
+button.tab-links:focus{
+    outline: none !important;
+    background-color: #ffffff;
+    color: #333333 !important;
+    border-radius: 4px;
+}
+button.tab-links:hover{
+    font-size: 17px;
     text-align: center;
-    color: #FFFFFF !important;
     text-decoration: none;
 }
-.tab a.active{
-    color: #000000 !important;
-}
+
 .divider{
-    background-color: #283655;
-    /* width: 2px; */
     height: 85%;
     border: 1px solid white;
 }
@@ -1253,17 +1254,8 @@ li.footer-links{
                 
                 */
     .tab-container{
-        width: 110%;
+        width: 100%;
     }
-
-    .tab{
-        width: 200px;
-        height: 60px;
-    }
-    .tab a:link{
-        line-height: 100%;
-    }
-
         /* Download section */
         .download-images{
             /* height: 50%; */
@@ -1332,12 +1324,25 @@ li.footer-links{
          visibility: hidden;
          display: none;
      }
+     #close-icon.active{
+        color: #000000;
+        z-index: 150;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 103%);
+     }
 
-     .hamburger-div,
      .hamburger-img{
+        color: #000000;
+     }
+     .hamburger-div,
+     .hamburger-img,
+     #close-icon{
          width: 50px;
          visibility: visible;
          display: flex;
+         transition: all .5s cubic-bezier(0, 1, 0, 1);
      }
      #sign-in-hidden{
         visibility: visible;
@@ -1349,6 +1354,7 @@ li.footer-links{
         padding: 16px 10px;
         text-align: center;
         height: auto;
+        position: relative;
     }
      .nav-list.visible{
          visibility:visible;
@@ -1358,10 +1364,10 @@ li.footer-links{
          justify-content: center;
 
          position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -33%);
-         height: auto;
+         top: 0;
+         right: 0;
+         /* transform: translate(-50%, -33%); */
+         height: 100vh;
          width: 90%;
          z-index: 100;
 
@@ -1463,13 +1469,7 @@ li.footer-links{
     .legal-info{
         font-size: 50px;
     }
-    .tab-container{
-        width: 110%;
-    }
-    .tab{
-        width:30%;
-        text-align: center;
-    }
+
     .error-title{
         /* font-size: 38px; */
         margin-bottom: 25px;
@@ -1563,6 +1563,11 @@ li.footer-links{
     }
 }
 @media screen and (max-width: 580px) {
+    button.tab-links{
+        line-height: 140%;
+        padding: 4px 6px;
+        font-size: 14px;
+    }
     .about-note-para{
         font-size: 26px;
     }
@@ -1616,6 +1621,11 @@ li.footer-links{
 }
 
 @media screen and (max-width: 460px) {
+    button.tab-links{
+        line-height: 140%;
+        padding: 6px 3px;
+        font-size: 12px;
+    }
     .faq-title{
         font-size: 18px;
     }
@@ -1686,12 +1696,7 @@ li.footer-links{
     .tab-container{
         height: 45px;
     }
-    .tab{
-        height: 80%;
-    }
-    .tab a:link{
-        font-size: 12px;
-    }
+
     .divider{
         height: 70%;
     }

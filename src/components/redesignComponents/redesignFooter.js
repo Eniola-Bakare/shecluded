@@ -17,8 +17,8 @@ const Footer = () => {
 				<ul>
 					<li className="footer-links first-link"><strong>Who We Are</strong></li>
 					<li className="footer-links"><Link to={"/aboutUs"}>About Us</Link></li>
-					<li className="footer-links"><a href='#what-we-do'>What We do</a></li>
-					<li className="footer-links"><a href='#who-we-serve'>Who we serve</a></li>
+					<li className="footer-links"><Link to={"/aboutUs"}>What we do</Link></li>
+					<li className="footer-links"><Link to={"/aboutUs"}>Who we serve</Link></li>
 					<li className="footer-links"><Link to={'*'}> Our People</Link></li>
 					<li className="footer-links"><Link to={'*'}> Our Services</Link></li>
 				</ul>
@@ -35,7 +35,7 @@ const Footer = () => {
 					<li className="footer-links"><Link to={'/terms'}> Cookies Policy</Link></li>
 					<li className="footer-links"><Link to={'/terms'}> Privacy Policcy</Link></li>
 					<li className="footer-links"><Link to={'/terms'}> Terms of Service</Link></li>
-					<li className="footer-links"><Link to={'/bb'}> Error 404</Link></li>
+					<li className="footer-links"><Link to={'*'}> Error 404</Link></li>
 				</ul>
 			</div>
 			<div className="third- ">

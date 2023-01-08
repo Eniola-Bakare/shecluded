@@ -44,9 +44,9 @@ const redesignAboutUs = () => {
             </div>
           </div>
 
-          <div className="about-note ">
+          {/* <div className="about-note ">
             <p className="about-note-para px-lg-5 mx-5">What started as a little white reader is now a powerful ecosystem of commerce solutions.</p>
-          </div>
+          </div> */}
 
           <div className="about-figures d-flex flex-column justify-content-center justify-content-xl-start align-items-center align-items-xl-start mx-auto mt-5 ">
             <p className="about-figures-title mb-5">Today Our Work Is More,<span> Important And Impactful Than Ever</span></p>
@@ -82,7 +82,7 @@ const redesignAboutUs = () => {
             </div>
           </div>
 
-          <RedesignCallToDownload />
+          {/* <RedesignCallToDownload /> */}
           <RedesignTestimonial />
         {/* </div> */}
 
