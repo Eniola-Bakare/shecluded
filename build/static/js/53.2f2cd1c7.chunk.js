@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[53],{260:function(n,e,t){n.exports=t.p+"static/media/commingSoon.46ac116c.png"},293:function(n,e,t){"use strict";t.r(e);var i=t(0),a=t.n(i),c=t(260),o=t.n(c);e.default=function(){return a.a.createElement("div",{style:{width:"100%"}},a.a.createElement("img",{style:{width:"100%"},className:"img-responsive",src:o.a,alt:"comming soon"}))}}}]);
-//# sourceMappingURL=53.2f2cd1c7.chunk.js.map

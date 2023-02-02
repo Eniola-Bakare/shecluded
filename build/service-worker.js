@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/shecluded/precache-manifest.3c18b854d09a6193a1a44527f541203b.js"
+  "/shecluded/precache-manifest.3e0edafee6c652b72d01ad924981c8ce.js"
 );
 
 workbox.clientsClaim();

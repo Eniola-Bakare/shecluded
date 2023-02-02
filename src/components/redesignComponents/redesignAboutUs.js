@@ -75,7 +75,7 @@ const redesignAboutUs = () => {
                   <p className="desc">Amount In Loans Disbursed</p>
                 </div>
                 <div className="about-figures-number-div-desc d-flex flex-column align-items-center align-items-xl-start">
-                  <p className="title">1500+</p>
+                  <p className="title">3000+</p>
                   <p className="desc">Members in our community</p>
                 </div>
               </div>

@@ -49,14 +49,14 @@ const Footer = () => {
 					</div>
 				</div>
 
-
-				<div className="install-div">
+				{/* Hidden Install segment */}
+				{/* <div className="install-div">
 					<p> Install App </p>
 					<div className="install-apps">
 						<img src={require ('../../assets/newRedesign-assets/footerAssets/googlePlay.png')} alt="Google Play download button" />
 						<img src={require ('../../assets/newRedesign-assets/footerAssets/appStore.png')} alt="Apple Store download button" />
 					</div>
-				</div>
+				</div> */}
 			
 			</div>
 		</div>
